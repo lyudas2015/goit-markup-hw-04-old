@@ -1,0 +1,471 @@
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+:root {
+/* fonts */
+--main-font: "Roboto";
+--secondary-font: "Raleway";
+
+/* text colors */
+--accent-txt-cl: #212121;
+--blue-txt-cl: #2196F3;
+--white-tht-cl: #FFFFFF;
+--black-txt-cl: #757575;
+--black-txt-logo: #000000;
+
+/* bg colors */
+--black-bg-cl: #2F303A;
+--header-bg-cl: #FFFFFF;
+--benefits-bg-cl: #E5E5E5;
+--team-bg-cl: #F5F4FA;
+
+/* others */
+}
+
+body {
+    font-family: var(--main-font), sans-serif;
+    font-size: 14px;
+}
+
+/* common styles start */
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+}
+/* common styles end */
+.header {
+    display: flex;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.header {
+    display: flex;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;  
+}
+
+.header-list {
+    display: flex;
+    margin-left: 93px;
+}
+.header-list-item {
+    display: flex;
+}
+
+.header-list-item:not(:last-child) {
+    margin-right: 50px;
+}
+.header-list .header-link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+.header-list-cont {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+.header-list-cont .header-list-contacts {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    text-decoration: none;
+}
+
+.header-contacts:not(:last-child) {
+    margin-right: 50px;
+}
+
+/* Header section */
+
+.header-link:hover,
+.header-link:focus {
+    color: var(--blue-txt-cl);
+}
+
+.header-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+}
+
+.current-link {
+    color: var(--blue-txt-cl) 
+}
+
+
+.header-logo.link {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;    
+    color: var(--blue-txt-cl)
+}
+ 
+.logo-accent {
+    color: var(--black-txt-logo)
+}
+
+.link.current-link {
+    color: var(--blue-txt-cl);
+} 
+
+.header-list-contacts:hover,
+.header-list-contacts:focus {
+    color: var(--blue-txt-cl);
+}
+
+.header-list-contacts {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #757575;
+    
+}
+.header-list-contacts {
+   color: #757575;
+} 
+
+/* Section hero */
+
+.hero {
+    background-color: var(--black-bg-cl)
+}
+.hero-container {
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.hero-title {
+    max-width: 696px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;   
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--white-tht-cl);
+}
+button {
+    font-family: var(--main-font);
+}
+.hero-button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.hero-button:hover,
+.hero-button:focus {
+    background-color: #188CE8;
+}
+
+.hero-button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    color: var(--white-tht-cl); 
+}
+
+.hero-button {
+    width: 200px;
+    height: 50px;
+    left: 700px;
+    top: 430px;
+    background-color: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+/* Section benefits */
+
+.benefits-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.benefits-list {
+    display: flex;
+    padding-left: 0px;
+    padding-right: 0px;
+} 
+
+.benefits-check {
+    width: 270px;
+}
+.benefits-check:not(:last-child) {
+    margin-right: 30px;
+}
+.benefits-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--accent-txt-cl);
+    margin-bottom: 10px;
+}
+.benefits-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--black-txt-cl)
+}
+
+/* Section about */
+.about-section {
+    padding-bottom: 94px;
+}
+
+.about-list {
+    display: flex;
+} 
+
+.about-item:not(:last-child)  {
+    margin-right: 30px;
+} 
+
+.about-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--accent-txt-cl);
+    margin-bottom: 50px;  
+}
+ /* Section team */
+.team-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: var(--team-bg-cl); 
+ }
+ .team-list {
+    display: flex;
+ }
+
+.team-card:not(:first-child)  {
+    margin-left: 30px;
+}
+.team-names {
+    margin-bottom: 10px;
+}
+.team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--accent-txt-cl)
+}
+.team-title {
+    margin-bottom: 50px;
+}
+.team-names {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--accent-txt-cl)
+}
+
+.team-text {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.team-profession {
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--black-txt-cl)
+}
+
+/* Портфоліо */
+.header-portfolio {
+    display: flex;
+    border-bottom: 1px solid #ECECEC;
+}
+
+/* Секція кнопок портфоліо */
+
+.button-list {
+    display: flex;
+    gap: 8px;
+    margin: 0 auto;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.button-special:hover,
+.button-special:focus {
+    cursor: pointer;
+}
+
+.button-special {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    border: none;
+    background-color: var(--blue-txt-cl);
+    color: var(--white-tht-cl);
+    padding-top: 6px;
+    padding-right: 22px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+}
+
+.button-name:hover,
+.button-name:focus {
+    background-color: var(--blue-txt-cl);
+    color: var(--white-tht-cl);
+ }
+
+.button-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    color: #212121;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    border: none;
+    background-color: #F5F4FA;
+    padding-top: 6px;
+    padding-right: 22px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+}
+
+/* Секція зображень */
+
+.section-portfolio {
+    padding-top: 97px;
+    padding-bottom: 91px;
+}
+
+.image-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: -15px;
+}
+
+.image-portfolio {
+    flex-basis: calc((100% - 30px * 3) / 3);
+    margin: 15px; 
+}
+
+.image-title {
+    margin-bottom: 4px;
+}
+
+.image-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2.00;
+    letter-spacing: 0.06em;
+    color: #212121;
+}
+.image-text {
+    padding-top: 20px;
+    padding-right: 24px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    border: 1px solid #EEEEEE;
+}
+
+.image-description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: #757575;
+    
+    
+}
+/* Футер */
+
+.footer {
+    background-color: var(--black-bg-cl);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+    
+.footer-logo.link {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--blue-txt-cl);
+}
+
+.footer-logo-accent {
+    color: var(--white-tht-cl);
+    text-decoration: none;
+}
+
+address {
+    font-style: normal;
+}
+
+.address {
+    margin-top: 20px;
+}   
+
+.footer-link:hover,
+.footer-link:focus  {
+    color: var(--white-tht-cl);
+}
+.footer-link.link.current-link {
+    color: var(--white-tht-cl);
+}
+.footer-link { 
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
+.footer-cont:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+
+
