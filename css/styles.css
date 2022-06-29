@@ -51,6 +51,7 @@ body {
     margin: 0 auto;
     padding-right: 15px;
     padding-left: 15px;
+    /* outline: 1px solid red; */
 }
 
 img {
@@ -97,7 +98,10 @@ img {
 .header-contacts:not(:last-child) {
     margin-right: 50px;
 }
-
+.header-contact-svg {
+    fill: currentColor;
+    margin-right: 10px;
+}
 /* Header section */
 
 .header-link:hover,
@@ -145,17 +149,22 @@ img {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: #757575;
-    
+    color: #757575;  
 }
-.header-list-contacts {
-   color: #757575;
-} 
+
 
 /* Section hero */
-
 .hero {
-    background-color: var(--black-bg-cl)
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/backgroundimg.jpg);
+    background-color: var(--black-bg-cl);
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 .hero-container {
     padding-top: 200px;
@@ -195,6 +204,7 @@ button {
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
+    border: none;
     cursor: pointer;
     color: var(--white-tht-cl); 
 }
@@ -204,6 +214,7 @@ button {
     height: 50px;
     left: 700px;
     top: 430px;
+
     background-color: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -224,8 +235,17 @@ button {
 .benefits-check {
     width: 270px;
 }
+
 .benefits-check:not(:last-child) {
     margin-right: 30px;
+}
+.benefits-box {
+    width: 270px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F5F4FA;
 }
 .benefits-title {
     font-weight: 700;
@@ -234,6 +254,7 @@ button {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--accent-txt-cl);
+    margin-top: 30px;
     margin-bottom: 10px;
 }
 .benefits-text {
@@ -275,10 +296,16 @@ button {
  .team-list {
     display: flex;
  }
-
+ 
 .team-card:not(:first-child)  {
     margin-left: 30px;
 }
+.team-all-card {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px; 
+}
+
 .team-names {
     margin-bottom: 10px;
 }
@@ -311,10 +338,83 @@ button {
     line-height: 1.18;
     letter-spacing: 0.03em;
     text-align: center;
-    color: var(--black-txt-cl)
+    color: var(--black-txt-cl);
+    margin-bottom: 16px;
+}
+/* Оформлення іконок */
+.team-media {
+    display: flex;
+    justify-content: center;
+ }
+
+ .team-media-item:not(:last-child) {
+    margin-right: 10px;
+ }
+
+.team-media-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    color: var(--black-txt-cl);
+    background-color: white;
+    border-radius: 50%;
+}
+.team-media-link:hover,
+.team-media-link:focus {
+    color: #FFFFFF;
+    background-color: var(--blue-txt-cl);
+}
+.team-media-icon {
+    fill: currentColor;
+}
+
+/* Постійні клієнти */
+.clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.clients-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin-bottom: 50px;
+}
+.clients-list {
+    display: flex;
+    align-items: center;
+}
+.clients-media:not(:last-child) {
+    margin-right: 30px;
+}
+.clients-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    color:  #AFB1B8;
+    border: 1px solid #AFB1B8;
+}
+.clients-link:hover,
+.clients-link:focus {
+    color:  #2196F3;
+    border: 1px solid #2196F3;
+}
+.clients-icons {
+    margin-top: 16px;
+    margin-right: 32px;
+    margin-bottom: 16px;
+    margin-left: 16px;
+    fill: currentColor;
 }
 
 /* Портфоліо */
+
 .header-portfolio {
     display: flex;
     border-bottom: 1px solid #ECECEC;
@@ -333,6 +433,7 @@ button {
 .button-special:hover,
 .button-special:focus {
     cursor: pointer;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .button-special {
@@ -347,12 +448,14 @@ button {
     padding-right: 22px;
     padding-bottom: 6px;
     padding-left: 22px;
+    border-radius: 4px;
 }
 
 .button-name:hover,
 .button-name:focus {
     background-color: var(--blue-txt-cl);
     color: var(--white-tht-cl);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
  }
 
 .button-name {
@@ -364,6 +467,7 @@ button {
     cursor: pointer;
     border: none;
     background-color: #F5F4FA;
+    border-radius: 4px;
     padding-top: 6px;
     padding-right: 22px;
     padding-bottom: 6px;
@@ -386,13 +490,27 @@ button {
 
 .image-portfolio {
     flex-basis: calc((100% - 30px * 3) / 3);
-    margin: 15px; 
+    margin: 15px;
 }
+    
+.image-portfolio:hover,
+.image-portfolio:focus { 
+    border: 1px solid #EEEEEE;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16); 
+} 
 
 .image-title {
     margin-bottom: 4px;
 }
-
+/* .image-text-special {
+    padding-top: 20px;
+    padding-right: 24px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+} */
 .image-title {
     font-weight: 700;
     font-size: 18px;
@@ -424,7 +542,10 @@ button {
     padding-top: 60px;
     padding-bottom: 60px;
 }
-    
+.footer-text {
+    display: flex;
+}
+
 .footer-logo.link {
     font-family: 'Raleway';
     font-style: normal;
@@ -465,6 +586,59 @@ address {
 }
 .footer-cont:not(:last-child) {
     margin-bottom: 9px;
+}
+
+/* Футер частина "Присоединяйтесь" */
+
+.footer-box {
+    margin-left: 70px;
+}
+.footer-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    padding-top: 12px;
+}
+.footer-media {
+    display: flex;
+    align-items: center;  
+}
+
+.footer-media-box:not(:last-child) {
+    margin-right: 10px;
+ }
+
+.footer-media-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    color: #FFFFFF;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-media-link:hover,
+.footer-media-link:focus {
+    color: #FFFFFF;
+    background-color: var(--blue-txt-cl);
+}
+.footer-media-icon {
+    fill: currentColor;
+}
+
+.footer-media-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+}
+.footer-media-icon {
+    color: #FFFFFF;
 }
 
 
