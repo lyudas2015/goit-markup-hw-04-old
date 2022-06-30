@@ -246,6 +246,7 @@ button {
     align-items: center;
     justify-content: center;
     background-color: #F5F4FA;
+    border-radius: 4px;
 }
 .benefits-title {
     font-weight: 700;
@@ -357,7 +358,7 @@ button {
     justify-content: center;
     width: 44px;
     height: 44px;
-    color: var(--black-txt-cl);
+    color: #afb1b8;
     background-color: white;
     border-radius: 50%;
 }
@@ -397,7 +398,8 @@ button {
     justify-content: center;
     width: 170px;
     height: 92px;
-    color:  #AFB1B8;
+    color:  #afb1b8;
+    border-radius: 4px;
     border: 1px solid #AFB1B8;
 }
 .clients-link:hover,
@@ -406,10 +408,6 @@ button {
     border: 1px solid #2196F3;
 }
 .clients-icons {
-    margin-top: 16px;
-    margin-right: 32px;
-    margin-bottom: 16px;
-    margin-left: 16px;
     fill: currentColor;
 }
 
@@ -495,7 +493,6 @@ button {
     
 .image-portfolio:hover,
 .image-portfolio:focus { 
-    border: 1px solid #EEEEEE;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16); 
 } 
 
